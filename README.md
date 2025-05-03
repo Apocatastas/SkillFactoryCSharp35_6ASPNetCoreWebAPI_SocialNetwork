@@ -1,7 +1,25 @@
-# AwesomeNetwork.
-![image](https://user-images.githubusercontent.com/101334622/224494957-6da4db33-6a45-404a-8915-30e1ac28ea68.png)
-![image](https://user-images.githubusercontent.com/101334622/224495174-adbb188c-33c0-4d6f-ae49-18122e23aca8.png)
-![image](https://user-images.githubusercontent.com/101334622/224495193-91e9d0f6-8f83-4918-a519-ecc51131bc73.png)
-![image](https://user-images.githubusercontent.com/101334622/224495219-6a236043-4b71-4027-b98e-7acb108483b4.png)
+# Представляю вашему вниманию проект Heroes Network 
+Разработка социальной сети с некоторыми базовыми функциями.
 
+## Главная страница
+Здесь вы можете зарегистрироваться и войти в свой аккаунт
+![Главная](https://apocatastas.github.io/thebestdeveloperever/home.png)
+Далее можно отредактировать дополнительные данные и добавить ссылку на ваш аватар
+![Редактирование](https://apocatastas.github.io/thebestdeveloperever/edit.png)
 
+## Друзья
+Пользователей можно добавлять и удалять в друзья, а потом пообщаться с друзьями
+![Пользователь](https://apocatastas.github.io/thebestdeveloperever/user.png)
+
+## Генератор
+Если не хочется регистрировать пользователей вручную, можно воспользоваться генератором по ссылке /generate
+В результате на платформу (и в БД) добавится 10 пользователей с тестовыми емейлами и паролем 123321
+![Генерация](https://apocatastas.github.io/thebestdeveloperever/search.png)
+
+## Поиск
+На платформе доступен поиск по имени пользователя, или можно ничего не ввести в поиск и получить список всех пользователей (кроме, собственно, залогиненного)   
+![Поиск](https://apocatastas.github.io/thebestdeveloperever/search1.png)
+
+## Чат
+С теми, кого вы добавили в друзья, можно пообщаться, история переписки сохраняется
+![Чат](https://apocatastas.github.io/thebestdeveloperever/chat.png)
