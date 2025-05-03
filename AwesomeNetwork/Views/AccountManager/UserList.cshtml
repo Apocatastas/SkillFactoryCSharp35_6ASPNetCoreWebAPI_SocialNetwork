@@ -1,0 +1,47 @@
+﻿@model AwesomeNetwork.ViewModels.Account.SearchViewModel;
+
+
+<div class="block-reg background-white">
+
+    @if (Model.UserList.Count != 0)
+    {
+
+        @foreach (var user in @Model.UserList)
+        {
+            <div class="user-card">
+                <div class="user-wrapper">
+                    <div class="avatar">
+                        <img class="friendlist" src="@user.GetImage()" />
+                    </div>
+                    <div class="user-info">
+                        <p><strong>@user.GetFullName()</strong></p>
+                        <p><strong>О себе:</strong> @user.GetInfo()</p>
+                        <p><strong>Статус:</strong> @user.GetStatus()</p>
+                    </div>
+                </div>
+                 @if (!@user.IsFriendWithCurrent)
+                {
+                    <form asp-controller="AccountManager" asp-action="AddFriend" asp-route-id="@user.Id" method="post">
+                        <button type="submit" class="btn btn-sm btn-primary">
+                            Добавить в друзья
+                        </button>
+                    </form>
+                }
+                @if (@user.IsFriendWithCurrent)
+                {
+                    <form asp-controller="AccountManager" asp-action="AddFriend" asp-route-id="@user.Id" method="post">
+                        <div class="isfriend">Вы уже друзья</div>
+                    </form>
+                }                              
+            </div>
+        }
+    }
+    else
+    {
+        <div>
+            <label> Поиск не дал результатов.</label>
+        </div>
+    }
+
+
+</div>
